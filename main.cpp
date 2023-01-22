@@ -9,6 +9,8 @@ int main()
     float deposit;
     float balance = 0;
     float withdraw;
+    bool onSession = true;
+    while(onSession){
     cout<<"Enter your option: ";
     cin>>option;
     switch(option){
@@ -36,9 +38,11 @@ case 3:
     break;
 case 4:
     cout<<"See you next time:)"<<endl;
+    onSession = false;
     break;
 default:
     cout<<"Please choose either 1, 2, 3, or 4"<<endl;
+    }
     }
     return 0;
 }
