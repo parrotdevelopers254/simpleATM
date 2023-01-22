@@ -24,7 +24,7 @@ case 1:
 case 2:
     cout<<"Enter amount to withdraw: ";
     cin>>withdraw;
-    if(withdraw<=deposit){
+    if(withdraw<=balance){
         cout<<"Successfully withdrawn "<<withdraw<<endl;
         balance -= withdraw;
         cout<<"New account balance is: "<<balance<<endl;
